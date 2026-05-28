@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Emberlight Sanctum</title>
+  <link rel="icon" href="assets/logos/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=IM+Fell+English:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div id="backdrop"><video id="bgVideo" muted loop playsinline></video><div id="fallbackBg"></div><div id="veil"></div></div>
+  <canvas id="embers"></canvas>
+  <main id="app">
+    <section id="entrance" class="entrance">
+      <img id="entranceLogo" class="entrance-logo" src="assets/logos/sanctum-logo.png" alt="Sanctum logo">
+      <p id="eyebrow" class="eyebrow">Records granted passage</p>
+      <h1 id="siteTitle">The Emberlight Sanctum</h1>
+      <p id="subtitle" class="subtitle">A curated archive of books deemed worthy of preservation.</p>
+      <button id="enterBtn" class="btn primary">Enter the Sanctum</button>
+    </section>
+    <section id="sanctum" class="sanctum hidden">
+      <header class="topbar">
+        <a id="brandLink" class="brand" href="#"><img id="brandLogo" src="assets/logos/sanctum-logo.png" alt=""><span id="brandText">The Emberlight Sanctum</span></a>
+        <div class="top-actions"><button id="audioToggle" class="btn ghost hidden">Audio Off</button><a class="btn ghost" href="admin.html">Gatekeeper</a></div>
+      </header>
+      <nav id="roomNav" class="room-nav"></nav>
+      <section id="roomView" class="room-view"></section>
+      <footer id="footerText" class="footer">The Emberlight Sanctum — SoftEmberTales</footer>
+    </section>
+  </main>
+
+  <form name="sanctum-contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name">
+    <input type="email" name="email">
+    <input type="text" name="type">
+    <textarea name="message"></textarea>
+    <input type="checkbox" name="consent">
+    <input type="checkbox" name="updates">
+    <input name="bot-field">
+  </form>
+  <dialog id="recordModal" class="record-modal"><div id="modalContent"></div></dialog>
+  <audio id="ambienceAudio" loop></audio><audio id="enterAudio"></audio><audio id="transitionAudio"></audio><audio id="clickAudio"></audio>
+  <script src="assets/js/shared.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

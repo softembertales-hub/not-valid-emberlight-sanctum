@@ -1,0 +1,35 @@
+{
+  "version":"3.1.0",
+  "updatedAt":"",
+  "settings":{
+    "siteTitle":"The Emberlight Sanctum",
+    "eyebrow":"Records granted passage",
+    "subtitle":"A curated archive of books deemed worthy of preservation.",
+    "enterButton":"Enter the Sanctum",
+    "footer":"The Emberlight Sanctum — SoftEmberTales",
+    "logo":"assets/logos/sanctum-logo.png",
+    "favicon":"assets/logos/favicon.png",
+    "logoUrl":"",
+    "showLogoText":true,
+    "backgroundVideo":"",
+    "fallbackImage":"",
+    "overlayOpacity":0.82,
+    "reducedMotion":false,
+    "audio":{"enabled":false,"ambienceUrl":"","enterUrl":"","transitionUrl":"","clickUrl":"","volume":0.35,"showControl":true,"defaultMuted":true},
+    "cloudinary":{"cloudName":"","uploadPreset":""},
+    "contact":{"enabled":true,"recipientEmail":"softembertales@gmail.com","successMessage":"Your message has been received by the Sanctum.","autoResponseSubject":"Your message has been received by the Sanctum","autoResponseBody":"Your message has been received by the Sanctum. The Archivist will review it soon.","consentText":"I consent to SoftEmberTales replying to my message by email.","emailListConsentText":"Send me occasional SoftEmberTales updates.","enableAutoResponse":false,"emailPlatform":"MailerLite","emailGroupName":"Sanctum Updates"},
+    "seals":{"Gilded":"assets/seals/gilded.png","Sterling":"assets/seals/sterling.png","Flicker":"assets/seals/flicker.png","Ash":"assets/seals/ash.png"},
+    "fields":{"cover":true,"title":true,"author":true,"releaseDate":true,"category":true,"status":true,"resonance":true,"archivistRating":true,"decree":true,"seal":true,"note":true,"fullReview":true,"quote":true,"triggerWarnings":true,"links":true}
+  },
+  "rooms":[
+    {"id":"stacks","name":"The Stacks","icon":"📚","lore":"Approved records preserved within the Sanctum.","active":true,"builtin":true,"order":1,"emptyText":"No records have been admitted yet."},
+    {"id":"alcove","name":"Reading Alcove","icon":"🕯️","lore":"An optional chamber for current reads and quiet progress.","active":false,"builtin":true,"order":2,"emptyText":"The alcove is quiet for now."},
+    {"id":"dispatch","name":"Dispatch Room","icon":"✉️","lore":"Optional pathways, links, and messages beyond the Sanctum.","active":false,"builtin":true,"order":3,"emptyText":"No dispatches are posted yet."},
+    {"id":"contact","name":"Contact Chamber","icon":"🗝️","lore":"Send a message directly to the Archivist.","active":true,"builtin":true,"order":4,"emptyText":"The chamber is sealed for now."}
+  ],
+  "records":[
+    {"id":"sample-flameheart","title":"Flameheart","author":"Dalton Bequette","cover":"","coverSource":"url","releaseDate":"","category":"Fantasy","status":"Preserved","resonance":4.8,"archivistRating":5,"decree":"Gilded","sealOverride":"","note":"A feel-good fantasy journey preserved for its imagination and warmth.","fullReview":"This sample record shows how a full decree or personal review can appear inside the modal.","quote":"","triggerWarnings":"","links":[{"label":"Goodreads","url":""},{"label":"Instagram Review","url":""}],"fieldVisibility":{},"featured":true,"archived":false,"source":"manual","createdAt":"2026-05-26T00:00:00.000Z","updatedAt":"2026-05-26T00:00:00.000Z"}
+  ],
+  "alcove":[],
+  "dispatchLinks":[]
+}
